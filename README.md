@@ -1,6 +1,14 @@
 English | [简体中文](./README_ZH.md)
 
-Notice: If you open a pull request in TUIKit Android or iOS and the corresponding changes are successfully merged, your name will be included in README.md with a hyperlink to your homepage on GitHub.
+# Tencent Cloud Chat SDK (IM SDK)
+
+> The most comprehensive **Chat SDK** and **IM SDK** for building **in-app messaging**. 
+> Send messages, create group chats, and integrate real-time communication into your app in minutes.
+
+Tencent Cloud Chat provides a powerful **Chat API**, **messaging SDK**, and **UIKit** components to help 
+developers build full-featured real-time messaging — including **one-to-one chat**, **group chat**, 
+**message push**, **offline push notifications**, and **send message** functionality — across 
+**Android, iOS, Web, Flutter, React Native, HarmonyOS, uni-app**, and more.
 
 # Instant Messaging
 ## Product Introduction
