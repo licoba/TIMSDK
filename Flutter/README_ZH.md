@@ -9,4 +9,4 @@
 ##### 其他文档
 
 1. [TUIKit 集成文档](https://cloud.tencent.com/document/product/269/125903)
-2. [Flutter IMSDK 文档](https://cloud.tencent.com/document/product/269/75286)
+2. [IMSDK 文档](https://cloud.tencent.com/document/product/269/75286)
