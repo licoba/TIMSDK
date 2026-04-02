@@ -4,21 +4,12 @@ English|[简体中文](./README_ZH.md)
 
 ##### Demo source code GitHub address
 
-[Chat-demo-flutter](https://github.com/TencentCloud/chat-demo-flutter)
-
-##### Contains UI SDK GitHub address
-
-[Chat-uikit-flutter](https://github.com/TencentCloud/chat-uikit-flutter)
-
-##### No UI SDK GitHub address
-
-[Chat-sdk-flutter](https://github.com/TencentCloud/chat-sdk-flutter)
-
+[Chat-demo-flutter](https://github.com/Tencent-RTC/TUIKit_Flutter)
 
 ##### Other documents
 
-1. [im flutter sdk documentation](https://cloud.tencent.com/document/product/269/68823)
-2. [im flutter api documentation](https://comm.qq.com/im/doc/flutter/index.html)
+1. [TUIKit documentation](https://cloud.tencent.com/document/product/269/125903)
+2. [IMSDK documentation](https://cloud.tencent.com/document/product/269/75286)
 
 
 ##### contact us
