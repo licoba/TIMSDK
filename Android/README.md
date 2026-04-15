@@ -1,118 +1,45 @@
 English | [简体中文](./README_ZH.md)
 
-This document introduces how to quickly run through the IM demo.
+# Tencent Chat SDK — Android
 
->In respect for the copyright of the emoji design, the Chat Demo/TUIKit project does not include the cutouts of large emoji elements. Please replace them with your own designed or copyrighted emoji packs before the official launch for commercial use. The default small yellow face emoji pack is copyrighted by Tencent Cloud and can be authorized for a fee. If you wish to obtain authorization, please [submit a ticket](https://console.tencentcloud.com/workorder/category?level1_id=29&level2_id=40&source=14&data_title=Chat&step=1) to contact us.
->
-> <img src="https://qcloudimg.tencent-cloud.cn/image/document/6438e8feb7bba909511e0d798dfaf91d.png" width="300px" />
+[![GitHub Stars](https://img.shields.io/github/stars/TencentCloud/TIMSDK?style=flat-square&logo=github)](https://github.com/TencentCloud/TIMSDK/stargazers)
 
-## Step 1. Create an App
-1. Log in to the [IM console](https://intl.cloud.tencent.com/login).
-> If you already have an app, record its SDKAppID and [configure the app](#step2).
-2. Click **Create Application**, enter your app name, and click **Confirm**.
-![](https://cloudcache.intl.tencent-cloud.com/cms/backend-cms/2dc3464956bd11ee974d5254005f490f.png)
-3. After creation, you can see the status, service version, SDKAppID, creation time, tag, and expiry time of the new app on the overview page of the console. Record the SDKAppID.
-![](https://cloudcache.intl.tencent-cloud.com/cms/backend-cms/2dc4751956bd11ee94c3525400d793d0.png)
+Pre-built Android chat UI components and Core SDK from Tencent Chat SDK — get started in minutes.
 
-## Step 2: Obtain Key Information
+> ⚠️ **This directory is no longer maintained.** Please use the latest standalone repos linked in the table below.
 
-1. Click the **target app card** to go to the **basic configuration** page of the app.
-![](https://cloudcache.intl.tencent-cloud.com/cms/backend-cms/2de94e1b56bd11ee94c3525400d793d0.png)
-2. In the Basic Information area, click Display key, and then copy and save the key information.
-> Please store the key information properly to prevent leakage.
+## About
 
-![](https://cloudcache.intl.tencent-cloud.com/cms/backend-cms/2de94e1b56bd11ee94c3525400d793d0.png)
+Tencent Chat SDK powers billions of messages daily across Tencent's ecosystem. Drop in our pre-built **UIKit** to ship a full-featured chat experience in under 10 minutes, or use the **Core SDK** to build your own UI on top of a battle-tested messaging infrastructure.
 
-## Step 3: Download and Configure the Demo Source Code
+<img src="https://qcloudimg.tencent-cloud.cn/raw/9c893f1a9c6368c82d44586907d5293d.png" width="800"/>
 
-1. Clone the IM demo project from [GitHub](https://github.com/tencentyun/TIMSDK).
-2. Open the project in the terminal directory and find the `GenerateTestUserSig` file in the following paths:
- <table>
-     <tr>
-         <th nowrap="nowrap">Platform</th>  
-         <th nowrap="nowrap">Relative Path to File</th>  
-     </tr>
-  <tr>      
-      <td>Android</td>   
-      <td>Android/Demo/app/src/main/java/com/tencent/qcloud/tim/demo/signature/GenerateTestUserSig.java</td>   
-     </tr> 
-  <tr>
-      <td>iOS</td>   
-      <td>iOS/Demo/TUIKitDemo/Private/GenerateTestUserSig.h</td>
-     </tr> 
-  <tr>      
-      <td>macOS</td>   
-      <td>Mac/Demo/TUIKitDemo/Debug/GenerateTestUserSig.h</td>   
-     </tr>  
-  <tr>      
-      <td>Windows</td>   
-      <td>Windows/Demo/IMApp/GenerateTestUserSig.h</td>   
-     </tr>  
-  <tr>      
-      <td>Web (general)</td>   
-      <td>Web/Demo/public/debug/GenerateTestUserSig.js</td>   
-     </tr>  
-  <tr>      
-      <td>Mini Program</td>   
-      <td>MiniProgram/Demo/static/utils/GenerateTestUserSig.js</td>   
-     </tr>  
-</table>
+## Get Started
 
+| Type | GitHub | Integration Guide |
+|---|---|---|
+| **Android UIKit (View)** (with UI) | [chat-uikit-android](https://github.com/TencentCloud/chat-uikit-android) | [UIKit for Android](https://trtc.io/document/60520) |
+| **Android UIKit (Compose)** (with UI) | [TUIKit_Android_Compose](https://github.com/Tencent-RTC/TUIKit_Android_Compose) | [UIKit for Android (Compose)](https://trtc.io/document/60520) |
+| **Android Core SDK** (no UI) | [chat-uikit-android / ChatSDK](https://github.com/TencentCloud/chat-uikit-android/tree/main/ChatSDK) | [SDK Integration (Android)](https://trtc.io/document/34306) |
 
- >In this document, an Android project is opened by using Android Studio as an example.
-  >
-3. Set relevant parameters in the `GenerateTestUserSig` file:
- - SDKAPPID: set it to the SDKAppID obtained in **step 1**.
- - SECRETKEY: enter the actual key information obtained in **step 2**.
+> Tencent Chat SDK offers a **[free plan](https://trtc.io/free-chat-api)** — 1,000 MAU/month, no concurrency limits, push notifications included, free forever.
 
-![](https://qcloudimg.tencent-cloud.cn/raw/7db2b7abfe1018f0b2612d4c49f95ab3.png)
+## Integration Video
 
-> In this document, the method to obtain UserSig is to configure a SECRETKEY in the client code. In this method, the SECRETKEY is vulnerable to decompilation and reverse engineering. Once your SECRETKEY is leaked, attackers can steal your Tencent Cloud traffic. Therefore, **this method is only suitable for locally running a demo project and feature debugging**.
->The correct `UserSig` distribution method is to integrate the calculation code of `UserSig` into your server and provide an application-oriented API. When `UserSig` is needed, your app can send a request to the business server for a dynamic `UserSig`. For more information, please see [How do I calculate UserSig on the server?](https://cloud.tencent.com/document/product/269/32688#GeneratingdynamicUserSig).
+[<img src="https://im.sdk.qcloud.com/tools/resource/GitHubResource/build_android_chat_app.png" width="800"/>](https://www.youtube.com/watch?v=7UI7a9e8lek)
 
-## Step 4: Compile and Run the Demo (All Features)
-Import the demo project with Android Studio, and then compile and run it.
+## Quick Links
 
-> **The demo integrates the audio and video call function by default. Since the audio and video SDK that this function depends on does not support the emulator, please use a real device to debug or run the demo.**
+- 🤖 [Build with AI](https://trtc.io/document/72277) — Integrate AI capabilities into your chat experience
+- 🎮 [Live Demo](https://trtc.io/demo/homepage/#/detail?scene=messenger) — Try Tencent Chat SDK in your browser
+- 📡 [REST API Reference](https://trtc.io/document/34620?product=chat&menulabel=restfulapi) — Server-side APIs for user management, messaging, and more
+- 🏠 [Product Home](https://trtc.io/products/chat) — Overview, pricing, and enterprise features
+- 🖥️ [Console](https://console.trtc.io) — Manage your applications and monitor usage
+- 🔄 [Chat SDK V2 API Upgrade Guide](https://docs.qq.com/sheet/DS3lMdHpoRmpWSEFW)
 
+## Contact Us
 
-## Step 5: Compile and Run the Demo (Removing the Audio/Video Call Feature)
-If you do not need the audio/video call feature, you only delete the audio/video call integration code as shown in the figure below from the `build.gradle` file under the `app` module:
-
-![](https://qcloudimg.tencent-cloud.cn/raw/4ad9df5f0b3d1068427a51937613da92.jpg)
-
-```groovy
-api project(':tuicallkit')
-```
-After the preceding steps are completed, the audio and video call entries in the demo are hidden.
-The conversation UIs before and after TUICallKit masking are as follows:
-
-| before | After |
-|---------|---------|
-| ![](https://qcloudimg.tencent-cloud.cn/raw/760e9de375121f01f4b385d101c30157.png) | ![](https://qcloudimg.tencent-cloud.cn/raw/71b73179123f1fc0201eca1f8b20e3ec.png)
-
-The contact profile UIs before and after TUICallKit masking are as follows:
-
-| before | After |
-|---------|---------|
-| ![](https://qcloudimg.tencent-cloud.cn/raw/5f0f2c490267ab4986d68a8c54f1e1fa.png) | ![](https://qcloudimg.tencent-cloud.cn/raw/a722756f50dcf96fe120c9dccb7dee44.png)
-
-> The above only shows how to remove the audio/video call feature from the demo. Developers can customize the demo according to their business requirements.
-
-## Step 6: Compile and Run the Demo (Removing the Search Module)
-If you do not need the search feature, you only delete the line of code as shown in the figure below from the `build.gradle` file under the `app` module:
-
-![](https://qcloudimg.tencent-cloud.cn/raw/7e2685017b93e418dadd1599bcb0a3b6.jpg)
-
-```groovy
-api project(':tuisearch')
-```
-After the preceding steps are completed, the message search box in the demo is hidden.
-
-The message UIs before and after TUISearch masking are as follows:
-
-| before | After |
-|---------|---------|
-| ![](https://qcloudimg.tencent-cloud.cn/raw/a5da1ef2be61d395a3fb7a54c117afc0.png) | ![](https://qcloudimg.tencent-cloud.cn/raw/84223f91d5681b7c15d333f5743044a2.png)
-
-> The above only shows how to remove the search feature from the demo. Developers can customize the demo according to their business requirements.
+- **Stack Overflow**: Tag your questions with [`trtc.io`](https://stackoverflow.com/questions/tagged/trtc.io)
+- **Telegram**: [Join our developer community](https://t.me/+EPk6TMZEZMM5OGY1)
+- **WhatsApp**: [Chat with our team](https://chat.whatsapp.com/Gfbxk7rQBqc8Rz4pzzP27A)
+- **GitHub Issues**: [Report a bug or request a feature](https://github.com/TencentCloud/TIMSDK/issues)
