@@ -1,15 +1,13 @@
-English|[简体中文](./README_ZH.md)
+English | [简体中文](./README_ZH.md)
 
-##### 1. Tencent cloud instant messaging IM UE5 version source code
+# Tencent Chat SDK — Unreal Engine 5
 
-[Chat-plugin-ue5](https://github.com/TencentCloud/chat-plugin-ue5)
+> ⚠️ **This directory is no longer maintained.**
+>
+> Please use the dedicated repo and integration guide below.
 
-##### 2. TIMPush
+## Get Started
 
-[Push Service](https://cloud.tencent.com/document/product/269/100621)
-
-[Push demo](https://github.com/TencentCloud/TIMSDK/tree/master/UE5/Push/pushdemo)（UE：5.6.0）
-
-
-##### contact us
-[Salers](https://intl.cloud.tencent.com/zh/contact-us)
+| Type | GitHub | Integration Guide |
+|---|---|---|
+| **UE5 Core SDK** | [chat-plugin-ue5](https://github.com/TencentCloud/chat-plugin-ue5) | [SDK Integration (Unreal Engine 5)](https://trtc.io/document/46262) |
