@@ -2,179 +2,78 @@ English | [简体中文](./README_ZH.md)
 
 # Tencent Cloud Chat SDK (IM SDK)
 
-> The most comprehensive **Chat SDK** and **IM SDK** for building **in-app messaging**. 
-> Send messages, create group chats, and integrate real-time communication into your app in minutes.
+Tencent Chat SDK provides a powerful **Chat API**, **messaging SDK**, and **UIKit** components to help developers build full-featured real-time messaging — including **one-to-one chat**, **channel chat**, **message push**, **offline push notifications**, and **send message** functionality — across **Android, iOS, MAC, Windows, Web, Flutter, React Native**, and more.
 
-Tencent Cloud Chat provides a powerful **Chat API**, **messaging SDK**, and **UIKit** components to help 
-developers build full-featured real-time messaging — including **one-to-one chat**, **group chat**, 
-**message push**, **offline push notifications**, and **send message** functionality — across 
-**Android, iOS, Web, Flutter, React Native, HarmonyOS, uni-app**, and more.
+## About
 
-# Instant Messaging
-## Product Introduction
-Build real-time social messaging capabilities with all the features into your applications and websites based on powerful and feature-rich chat APIs, SDKs and UIKit components.
-
-<table style="text-align:center; vertical-align:middle; width:440px">
-  <tr>
-    <th style="text-align:center;" width="220px">Android Experience App</th>
-    <th style="text-align:center;" width="220px">iOS Experience App</th>
-  </tr>
-  <tr>
-    <td><img style="width:200px" src="https://qcloudimg.tencent-cloud.cn/raw/078fbb462abd2253e4732487cad8a66d.png"/></td>
-    <td><img style="width:200px" src="https://qcloudimg.tencent-cloud.cn/raw/b1ea5318e1cfce38e4ef6249de7a4106.png"/></td>
-   </tr>
-</table>
-
-TUIKit is a UI component library based on Tencent Cloud IM SDK. It provides universal UI components to offer features such as conversation, chat, search, relationship chain, group, and audio/video call features.
+Tencent Chat SDK powers billions of messages daily across Tencent's ecosystem. Drop in our pre-built **UIKit** to ship a full-featured chat experience in under 10 minutes, or use the **Core SDK** to build your own UI on top of a battle-tested messaging infrastructure — available across every major platform.
 
 <img src="https://qcloudimg.tencent-cloud.cn/raw/9c893f1a9c6368c82d44586907d5293d.png" style="zoom:50%;"/>
 
-## Image Download
+## Core Capabilities
 
-Tencent Cloud branch download address: [Download](https://im.sdk.qcloud.com/download/github/TIMSDK.zip)
+- **UIKit** — Build a fully-featured chat app in just ten minutes using UIKit components
+- **Various Message Types** — Support multiple message types, such as text, images, audio, and video messages
+- **Message Status** — Real-time read receipts, online/offline status, and typing indicators for a responsive chat experience
+- **Notifications** — Timely notify users of app messages and drive higher conversion rates
+- **Channel** — Create channels, manage channel members, and customize profiles
+- **Conversation Management** — View information about unread messages, recent, pinned, or deleted chats
+- **Large-Scale Communities** — Support communities up to 1,000,000 members with topic-based sub-channels for fan groups, events, and more
+- **Advanced Features** — Cloud-based message search, real-time text translation, Official Channels, and message merging for power users
 
-## SDK Download
+## Get Started
 
-<table>
-<tr>
-<th width="94px" style="text-align:center" >Native SDK</td>
- <th width="0px" style="text-align:center" >Download Address</td>
-<th width="0px"  style="text-align:center">Integration Guide</td>
-<th width="175px" style="text-align:center">Update Log</td>
-</tr>
-<tr>
-<td style="text-align:center">Android  </td>
-<td style="text-align:center" ><a href="https://github.com/tencentyun/TIMSDK/tree/master/Android/IMSDK">GitHub (Recommended)</a></td>
-<td style="text-align:left" ><a href="https://www.tencentcloud.com/document/product/1047/50057">[Quick Integration] TUIKit Integration (Android)</a><br><a href="https://www.tencentcloud.com/document/product/1047/34306">[General Integration] SDK Integration (Android)</a></td>
-<td style="text-align:center" rowspan='5'><a href="https://intl.cloud.tencent.com/document/product/1047/34282">Update Log (Native)</a> </td>
-</tr>
-<tr>
-<td style="text-align:center">iOS  </td>
-<td style="text-align:center" ><a href="https://github.com/tencentyun/TIMSDK/tree/master/iOS/IMSDK">GitHub (Recommended)</a></td>
-<td style="text-align:left" ><a href="https://www.tencentcloud.com/document/product/1047/50056">[Quick Integration] TUIKit Integration (iOS)</a><br><a href="https://www.tencentcloud.com/document/product/1047/34307">[General Integration] SDK Integration (iOS)</a></td>
-</tr>
-<tr>
-<td style="text-align:center">Mac  </td>
-<td style="text-align:center" ><a href="https://github.com/tencentyun/TIMSDK/tree/master/Mac/IMSDK">GitHub (Recommended)</a></td>
-<td style="text-align:left" ><a href="https://www.tencentcloud.com/document/product/1047/34308">[General Integration] SDK Integration (Mac)</a></td>
-</tr>
-<tr>
-<td style="text-align:center">Windows  </td>
-<td style="text-align:center" ><a href="https://github.com/tencentyun/TIMSDK/tree/master/Windows/IMSDK">GitHub (Recommended)</a></td>
-<td style="text-align:left" ><a href="https://www.tencentcloud.com/document/product/1047/34310">[General Integration] SDK Integration (Windows)</a></td>
-</tr>
-<tr>
-<td style="text-align:center">HarmonyOS  </td>
-<td style="text-align:center" ><a href="https://github.com/tencentyun/TIMSDK/tree/master/HarmonyOS/IMSDK">GitHub (Recommended)</a></td>
-<td style="text-align:left" ><a href="https://cloud.tencent.com/document/product/269/103558">[General Integration] SDK Integration (HarmonyOS)</a></td>
-</tr>
-</table>
+This is the central hub repository for Tencent Chat SDK. Choose your platform below to find the dedicated repo and integration guide.
 
-## TUIKit Integration
+> Tencent Chat SDK offers a **[free plan](https://trtc.io/free-chat-api)** — 1,000 MAU/month, no concurrency limits, push notifications included, free forever.
 
-<table >
-  <tr>
-    <th width="180px" style="text-align:center">Functional Module</th>
-    <th width="180px" style="text-align:center">Platform</th>
-    <th width="500px" style="text-align:center">Document Link</th>
-  </tr>
+### UIKit — Platform Routing
 
-  <tr >
-     <td rowspan='2' style="text-align:center">TUIKit Library</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50062">TUIKit-iOS Library</a></td>
-  </tr>
+| Platform | Repository | Integration Guide |
+|---|---|---|
+| Android (View) | [chat-uikit-android](https://github.com/TencentCloud/chat-uikit-android) | [UIKit for Android](https://trtc.io/document/60520) |
+| Android (Compose) | [TUIKit_Android_Compose](https://github.com/Tencent-RTC/TUIKit_Android_Compose) | [UIKit for Android (Compose)](https://trtc.io/document/60520) |
+| iOS (UIKit) | [Chat_UIKit](https://github.com/Tencent-RTC/Chat_UIKit) | [UIKit for iOS](https://trtc.io/document/60521) |
+| iOS (SwiftUI) | [TUIKit_iOS_SwiftUI](https://github.com/Tencent-RTC/TUIKit_iOS_SwiftUI) | [UIKit for iOS (SwiftUI)](https://trtc.io/document/60521) |
+| Mac | [Chat_UIKit / Swift](https://github.com/Tencent-RTC/Chat_UIKit/tree/main/Swift) | [UIKit for Mac](https://trtc.io/document/60521) |
+| Web (React) | [chat-uikit-react](https://github.com/TencentCloud/chat-uikit-react) | [UIKit for React](https://trtc.io/document/50055) |
+| Web (Vue) | [chat-uikit-vue](https://github.com/TencentCloud/chat-uikit-vue) | [UIKit for Vue](https://trtc.io/document/58644) |
+| Flutter | [TUIKit_Flutter](https://github.com/Tencent-RTC/TUIKit_Flutter) | [UIKit for Flutter](https://trtc.io/document/58585) |
+| React Native | [chat-demo-react-native](https://github.com/TencentCloud/chat-demo-react-native) | [UIKit for React Native](https://trtc.io/document/56573) |
 
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50062">TUIKit-Android Library</a></td>
-  </tr>
-    
-  <tr >
-     <td rowspan='2' style="text-align:center">Quick Integration</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50056">TUIKit-iOS Quick Integration</a></td>
-  </tr>
+### Core SDK — Platform Routing
 
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50057">TUIKit-Android Quick Integration</a></td>
-  </tr>
+| Platform | Repository | Integration Guide |
+|---|---|---|
+| Android | [chat-uikit-android / ChatSDK](https://github.com/TencentCloud/chat-uikit-android/tree/main/ChatSDK) | [SDK Integration (Android)](https://trtc.io/document/34306) |
+| iOS | [chat-uikit-ios / ChatSDK](https://github.com/TencentCloud/chat-uikit-ios/tree/main/ChatSDK) | [SDK Integration (iOS)](https://trtc.io/document/34307) |
+| Mac | [TIMSDK / Mac](https://github.com/TencentCloud/TIMSDK/blob/master/Mac/IMSDK/README_CHAT.md) | [SDK Integration (Mac)](https://trtc.io/document/34308) |
+| Windows | [TIMSDK / Windows](https://github.com/TencentCloud/TIMSDK/tree/master/Windows/IMSDK) | [SDK Integration (Windows)](https://trtc.io/document/34310) |
+| Flutter | [pub: tencent_cloud_chat_sdk](https://pub.dev/packages/tencent_cloud_chat_sdk) | [SDK Integration (Flutter)](https://trtc.io/document/46264) |
+| React Native | [npm: @tencentcloud/chat](https://www.npmjs.com/package/@tencentcloud/chat) | [SDK Integration (React Native)](https://trtc.io/document/48865) |
+| Web (JS) | [npm: @tencentcloud/chat](https://www.npmjs.com/package/@tencentcloud/chat) | [SDK Integration (JavaScript)](https://trtc.io/document/34309) |
 
-  <tr>
-     <td rowspan='2' style="text-align:center">Modifying UI Themes</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50051">TUIKit-iOS Modifying UI Themes</a></td>
-  </tr>
+## Use Cases
 
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50052">TUIKit-Android Modifying UI Themes</a></td>
-  </tr>
+Build industry-specific solutions using Tencent Chat SDK:
 
-  <tr>
-     <td rowspan='2' style="text-align:center">Setting UI Styles</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50048">TUIKit-iOS Setting UI Styles</a></td>
-  </tr>
+- 💬 [Official Channel](https://trtc.io/document/69925) — WhatsApp Channel-style broadcast & subscription for brand engagement
+- 🎮 [Discord-style Community](https://trtc.io/document/53499) — Servers, channels, threads, and reactions for large-scale communities
+- 🤖 [AI Chatbot](https://trtc.io/document/54925) — Integrate LLM-powered chat bots for customer service, companionship, and more
+- 🧧 [Red Packet](https://trtc.io/document/78288) — Send red packets in one-on-one and group chats using custom messages and payment integration
 
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50049">TUIKit-Android Setting UI Styles</a></td>
-  </tr>
+## Quick Links
 
-  <tr>
-     <td rowspan='2' style="text-align:center">Adding Custom Messages</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50043">TUIKit-iOS Adding Custom Messages</a></td>
-  </tr>
+- 🤖 [Build with AI](https://trtc.io/document/72277) — Integrate AI capabilities into your chat experience
+- 🎮 [Live Demo](https://trtc.io/demo/homepage/#/detail?scene=messenger) — Try Tencent Chat SDK in your browser
+- 📡 [REST API Reference](https://trtc.io/document/34620?product=chat&menulabel=restfulapi) — Server-side APIs for user management, messaging, and more
+- 🏠 [Product Home](https://trtc.io/products/chat) — Overview, pricing, and enterprise features
+- 🖥️ [Console](https://console.trtc.io) — Manage your applications and monitor usage
+- 🔄 [Chat SDK V2 API Upgrade Guide](https://docs.qq.com/sheet/DS3lMdHpoRmpWSEFW)
 
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50044">TUIKit-Android Adding Custom Messages</a></td>
-  </tr>
-    
-   <tr>
-     <td rowspan='2' style="text-align:center">Implementing Local Search</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50037">TUIKit-iOS Implementing Local Search</a></td>
-  </tr>
+## Contact Us
 
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50038">TUIKit-Android Implementing Local Search</a></td>
-  </tr>
-    
-  <tr>
-     <td rowspan='2' style="text-align:center">Integrating Offline Push</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50033">TUIKit-iOS Integrating Offline Push</a></td>
-  </tr>
-
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://www.tencentcloud.com/document/product/1047/50034">TUIKit-Android Integrating Offline Push</a></td>
-  </tr>
-
-</table>
-
-## Guidelines for Upgrading IMSDK to V2 APIs
-
-[API Upgrade Guidelines](https://docs.qq.com/sheet/DS3lMdHpoRmpWSEFW)
-
-## Latest Enhanced Version 8.9.7511 @2026.02.10
-### SDK
-- Added streaming message capability
-- Supports fetching read timestamps for group application lists (C API)
-- Supports batch marking group application lists as read (C API)
-- Fixed issue where synchronized conversation marker information could be lost during login if local conversation did not exist
-- Fixed potential failure to update atAll data in conversation information under multi-device login scenarios
-- Fixed abnormal behavior when fetching merged message lists after locally inserting merged messages
-- Fixed failure to pull nested merged messages in offline scenarios
-- Optimized SDK stability
-### TUIKit & Demo
-- Added official account capability (iOS & Android)
-- Added voice cloning capability (iOS)
-- Added text-to-speech capability (iOS)
-- Fixed issue where "@ mentions" notification would not display when entering chat interface with more than 2 pinned messages (iOS)
-
+- **Stack Overflow**: Tag your questions with [`trtc.io`](https://stackoverflow.com/questions/tagged/trtc.io)
+- **Telegram**: [Join our developer community](https://t.me/+EPk6TMZEZMM5OGY1)
+- **WhatsApp**: [Chat with our team](https://chat.whatsapp.com/Gfbxk7rQBqc8Rz4pzzP27A)
+- **GitHub Issues**: [Report a bug or request a feature](https://github.com/TencentCloud/TIMSDK/issues)
