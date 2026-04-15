@@ -35,7 +35,6 @@ This is the central hub repository for Tencent Chat SDK. Choose your platform be
 | Android (Compose) | [TUIKit_Android_Compose](https://github.com/Tencent-RTC/TUIKit_Android_Compose) | [UIKit for Android (Compose)](https://trtc.io/document/60520) |
 | iOS (UIKit) | [Chat_UIKit](https://github.com/Tencent-RTC/Chat_UIKit) | [UIKit for iOS](https://trtc.io/document/60521) |
 | iOS (SwiftUI) | [TUIKit_iOS_SwiftUI](https://github.com/Tencent-RTC/TUIKit_iOS_SwiftUI) | [UIKit for iOS (SwiftUI)](https://trtc.io/document/60521) |
-| Mac | [Chat_UIKit / Swift](https://github.com/Tencent-RTC/Chat_UIKit/tree/main/Swift) | [UIKit for Mac](https://trtc.io/document/60521) |
 | Web (React) | [chat-uikit-react](https://github.com/TencentCloud/chat-uikit-react) | [UIKit for React](https://trtc.io/document/50055) |
 | Web (Vue) | [chat-uikit-vue](https://github.com/TencentCloud/chat-uikit-vue) | [UIKit for Vue](https://trtc.io/document/58644) |
 | Flutter | [TUIKit_Flutter](https://github.com/Tencent-RTC/TUIKit_Flutter) | [UIKit for Flutter](https://trtc.io/document/58585) |
