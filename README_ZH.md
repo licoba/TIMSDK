@@ -1,185 +1,93 @@
 [English](./README.md) | 简体中文
 
-公告：TUIKit Android 与 iOS 端开放 Pull Request，merge 成功后会在 README.md 上留下您的大名并超链到您的 Github 主页！
+# Tencent Chat SDK
 
-# 即时通信 IM
-## 产品简介
-即时通信 IM（Instant Messaging）基于 QQ 底层 IM 能力开发，仅需植入 IM SDK 即可轻松集成聊天、会话、群组、资料管理和直播弹幕能力，也支持通过信令消息与白板等其他产品打通，全面覆盖您的业务场景，支持各大平台小程序接入使用，全面满足通信需要。
+[![GitHub Stars](https://img.shields.io/github/stars/TencentCloud/TIMSDK?style=flat-square&logo=github)](https://github.com/TencentCloud/TIMSDK/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/TencentCloud/TIMSDK?style=flat-square&logo=github)](https://github.com/TencentCloud/TIMSDK/network/members)
+
+Tencent Chat SDK 提供强大的 **Chat API**、**消息 SDK** 和 **UIKit** 组件，帮助开发者构建全功能实时通信——包括**单聊**、**频道聊天**、**消息推送**、**离线推送通知**等能力——覆盖 **Android、iOS、MAC、Windows、Web、Flutter、React Native** 等主流平台。
+
+## 关于
+
+Tencent Chat SDK 每日承载数十亿条消息，植根于腾讯生态。接入预置 **UIKit**，10 分钟内上线完整聊天体验；或选用 **Core SDK**，在经过大规模验证的消息基础设施之上构建专属 UI——全平台覆盖。
 
 <table style="text-align:center; vertical-align:middle; width:440px">
   <tr>
-    <th style="text-align:center;" width="220px">Android 体验 App</th>
-    <th style="text-align:center;" width="220px">iOS 体验 App</th>
+    <th style="text-align:center;" width="220px">Android 体验版</th>
+    <th style="text-align:center;" width="220px">iOS 体验版</th>
   </tr>
   <tr>
     <td><img style="width:200px" src="https://qcloudimg.tencent-cloud.cn/raw/078fbb462abd2253e4732487cad8a66d.png"/></td>
     <td><img style="width:200px" src="https://qcloudimg.tencent-cloud.cn/raw/b1ea5318e1cfce38e4ef6249de7a4106.png"/></td>
-   </tr>
+  </tr>
 </table>
 
-我们提供了一套基于 IM SDK 的 TUIKit 组件库，组件库包含了会话、聊天、搜索、关系链、群组、音视频通话等功能。基于 UI 组件您可以像搭积木一样快速搭建起自己的业务逻辑。
+TUIKit 提供开箱即用的会话列表、消息气泡、表情回应、群组管理等组件——完全可定制、开源、生产可用。
 
-<img src="https://qcloudimg.tencent-cloud.cn/raw/40795a52d2df3d6c1f9ed41a51638da5.png" style="zoom:50%;"/>
+<img src="https://qcloudimg.tencent-cloud.cn/raw/9c893f1a9c6368c82d44586907d5293d.png" style="zoom:50%;"/>
 
-## 镜像下载
+## 核心能力
 
-腾讯云分流下载地址： [DOWNLOAD](https://im.sdk.qcloud.com/download/github/TIMSDK.zip)
+- **UIKit** — 使用 UIKit 组件，10 分钟内构建功能完备的聊天应用
+- **多种消息类型** — 支持文本、图片、语音、视频等多种消息类型
+- **消息状态与在线感知** — 实时已读回执、在线/离线状态展示、正在输入提示，打造沉浸式聊天体验
+- **通知推送** — 及时通知用户应用消息，提升转化率
+- **频道管理** — 创建频道、管理成员、自定义频道资料
+- **会话管理** — 查看未读消息、最近会话、置顶、删除等会话信息
+- **大型社群** — 支持最多 100 万人社群，具备话题分层管理，适用于粉丝群、兴趣社区、大型活动等场景
+- **高级功能** — 云端消息搜索、实时文本翻译、公众号等企业级能力
 
-## SDK下载
+## 快速开始
 
-<table>
-<tr>
-<th width="94px" style="text-align:center" >终端 SDK</td>
- <th width="0px" style="text-align:center" >下载地址</td>
-<th width="0px"  style="text-align:center">集成指引文档</td>
-<th width="175px" style="text-align:center">更新日志</td>
-</tr>
-<tr>
-<td style="text-align:center">Android  </td>
-<td style="text-align:center" ><a href="https://github.com/tencentyun/TIMSDK/tree/master/Android/IMSDK">Github(推荐)</a></td>
-<td style="text-align:left" ><a href="https://cloud.tencent.com/document/product/269/37059">【极速集成】导入TUIKit (Android)</a><br><a href="https://cloud.tencent.com/document/product/269/75283">【常规集成】快速导入到工程 (Android)</a></td>
-<td style="text-align:center" rowspan='5'><a href="https://cloud.tencent.com/document/product/269/1606">更新日志(终端)</a> </td>
-</tr>
-<tr>
-<td style="text-align:center">iOS  </td>
-<td style="text-align:center" ><a href="https://github.com/tencentyun/TIMSDK/tree/master/iOS/IMSDK">Github(推荐)</a></td>
-<td style="text-align:left" ><a href="https://cloud.tencent.com/document/product/269/37060">【极速集成】导入TUIKit (iOS)</a><br><a href="https://cloud.tencent.com/document/product/269/75284">【常规集成】快速导入到工程  (iOS)</a></td>
-</tr>
-<tr>
-<td style="text-align:center">Mac  </td>
-<td style="text-align:center" ><a href="https://github.com/tencentyun/TIMSDK/tree/master/Mac/IMSDK">Github(推荐)</a></td>
-<td style="text-align:left" ><a href="https://cloud.tencent.com/document/product/269/75288">【常规集成】快速导入到工程 (Mac)</a></td>
-</tr>
-<tr>
-<td style="text-align:center">Windows  </td>
-<td style="text-align:center" ><a href="https://github.com/tencentyun/TIMSDK/tree/master/Windows/IMSDK">Github(推荐)</a></td>
-<td style="text-align:left" ><a href="https://cloud.tencent.com/document/product/269/75287">【常规集成】快速导入到工程 (Windows)</a></td>
-</tr>
-<tr>
-<td style="text-align:center">HarmonyOS  </td>
-<td style="text-align:center" ><a href="https://gitee.com/cloudtencent/TIMSDK/tree/master/HarmonyOS/IMSDK">Gitee(推荐)</a></td>
-<td style="text-align:left" ><a href="https://cloud.tencent.com/document/product/269/103558">【常规集成】快速导入到工程 (HarmonyOS)</a></td>
-</tr>
-</table>
-
-## TUIKit集成
-
-<table >
-  <tr>
-    <th width="180px" style="text-align:center">功能模块</th>
-    <th width="180px" style="text-align:center">平台</th>
-    <th width="500px" style="text-align:center">文档链接</th>
-  </tr>
-
-  <tr >
-     <td rowspan='2' style="text-align:center">TUIKit 界面库</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/37190">TUIKit-iOS界面库</a></td>
-  </tr>
-
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/37190">TUIKit-Android界面库</a></td>
-  </tr>
-    
-  <tr >
-     <td rowspan='2' style="text-align:center">快速集成</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/37060">TUIKit-iOS快速集成</a></td>
-  </tr>
-
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/37059">TUIKit-Android快速集成</a></td>
-  </tr>
-
-  <tr>
-     <td rowspan='2' style="text-align:center">修改界面主题</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/79705">TUIKit-iOS修改界面主题</a></td>
-  </tr>
-
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/79704">TUIKit-Android修改界面主题</a></td>
-  </tr>
-
-  <tr>
-     <td rowspan='2' style="text-align:center">设置界面风格</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/79082">TUIKit-iOS设置界面风格</a></td>
-  </tr>
-
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/79081">TUIKit-Android设置界面风格</a></td>
-  </tr>
-
-  <tr>
-     <td rowspan='2' style="text-align:center">添加自定义消息</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/37067">TUIKit-iOS添加自定义消息</a></td>
-  </tr>
-
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/37066">TUIKit-Android添加自定义消息</a></td>
-  </tr>
-    
-   <tr> 
-     <td rowspan='2' style="text-align:center">添加自定义表情</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/81912">TUIKit-iOS添加自定义表情</a></td>
-  </tr>
-
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/81911">TUIKit-Android添加自定义表情</a></td>
-  </tr>
-    
-   <tr>
-     <td rowspan='2' style="text-align:center">实现本地搜索</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/76103">TUIKit-iOS实现本地搜索</a></td>
-  </tr>
-
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/76102">TUIKit-Android实现本地搜索</a></td>
-  </tr>
-    
-  <tr>
-     <td rowspan='2' style="text-align:center">接入消息推送插件</td>
-     <td style="text-align:center">iOS</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/100621#.E7.AC.AC.E4.B8.80.E6.AD.A5.EF.BC.9A.E5.85.8D.E8.B4.B9.E5.BC.80.E9.80.9A---.E5.88.9B.E5.BB.BA.E5.AE.A2.E6.9C.8D.E8.99.9A.E6.8B.9F.E5.8F.B7">TIMPush-iOS开通使用消息推送插件</a></td>
-  </tr>
-
-  <tr>
-     <td style="text-align:center">Android</td>
-     <td style="text-align:center"><a href="https://cloud.tencent.com/document/product/269/100621#.E7.AC.AC.E4.B8.80.E6.AD.A5.EF.BC.9A.E5.85.8D.E8.B4.B9.E5.BC.80.E9.80.9A---.E5.88.9B.E5.BB.BA.E5.AE.A2.E6.9C.8D.E8.99.9A.E6.8B.9F.E5.8F.B7">TIMPush-Android开通使用消息推送插件</a></td>
-  </tr>
-
-</table>
-
-## IMSDK 升级 V2API 接口指引
-
-[接口升级指引](https://docs.qq.com/sheet/DS3lMdHpoRmpWSEFW)
-
-## 最新增强版 8.9.7511 @2026.02.10
-### SDK
-- 新增流式消息能力
-- 支持拉取群申请列表已读时间(C 接口)
-- 支持批量设置群申请列表已读(C 接口)
-- 修复当本地会话不存在时，登录同步的会话标记信息丢失的问题
-- 修复多端登录场景下，会话信息中的 atAll 数据可能存在不更新的情况
-- 修复本地插入合并消息，再去获取合并消息列表异常的问题
-- 修复合并嵌套消息，断网场景下拉取失败的问题
-- 优化 SDK 稳定性问题
-
-### TUIKit & Demo
-- 新增公众号能力（iOS & Android）
-- 新增音色克隆能力（iOS）
-- 新增文字转语音能力（iOS）
-- 修复 2 条以上的置顶消息，进入聊天界面“有人@我”会不显示的问题（iOS）
+这是 Tencent Chat SDK 的中枢仓库，请选择你的平台找到对应的独立仓库和集成文档。
 
 
+### UIKit — 平台导航
+
+| 平台 | 仓库 | 集成文档 |
+|---|---|---|
+| Android (View) | [TIMSDK / Android TUIKit](https://github.com/TencentCloud/TIMSDK/tree/master/Android/TUIKit) | [Android（View）集成文档](https://cloud.tencent.com/document/product/269/37059) |
+| Android (Compose) | [TUIKit_Android_Compose](https://github.com/Tencent-RTC/TUIKit_Android_Compose) | [Android（Compose）集成文档](https://cloud.tencent.com/document/product/269/125127) |
+| iOS (UIKit) | [Chat_UIKit](https://github.com/Tencent-RTC/Chat_UIKit) | [iOS（UIKit）集成文档](https://cloud.tencent.com/document/product/269/37060) |
+| iOS (SwiftUI) | [TUIKit_iOS_SwiftUI](https://github.com/Tencent-RTC/TUIKit_iOS_SwiftUI) | [iOS（SwiftUI）集成文档](https://cloud.tencent.com/document/product/269/124935) |
+| Web (React) | [chat-uikit-react](https://github.com/TencentCloud/chat-uikit-react) | [React UIKit 集成文档](https://cloud.tencent.com/document/product/269/83749) |
+| Web (Vue) | [chat-uikit-vue](https://github.com/TencentCloud/chat-uikit-vue) | [Vue UIKit 集成文档](https://cloud.tencent.com/document/product/269/123108) |
+| Flutter | [TUIKit_Flutter](https://github.com/Tencent-RTC/TUIKit_Flutter) | [Flutter UIKit 集成文档](https://cloud.tencent.com/document/product/269/70747) |
+| React Native | [chat-demo-react-native](https://github.com/TencentCloud/chat-demo-react-native) | [React Native 集成文档](https://cloud.tencent.com/document/product/269/92670) |
+
+### Core SDK — 平台导航
+
+| 平台 | 仓库 | 集成文档 |
+|---|---|---|
+| Android | [chat-uikit-android](https://github.com/TencentCloud/chat-uikit-android/tree/main/ChatSDK) | [Android SDK 集成](https://cloud.tencent.com/document/product/269/75283) |
+| iOS | [chat-uikit-ios](https://github.com/TencentCloud/chat-uikit-ios/tree/main/ChatSDK) | [iOS SDK 集成](https://cloud.tencent.com/document/product/269/75284) |
+| Mac | [TIMSDK / Mac](https://github.com/TencentCloud/TIMSDK/blob/master/Mac/IMSDK/README_CHAT.md) | [Mac SDK 集成](https://cloud.tencent.com/document/product/269/75288) |
+| Windows | [TIMSDK / Windows](https://github.com/TencentCloud/TIMSDK/tree/master/Windows/IMSDK) | [Windows SDK 集成](https://cloud.tencent.com/document/product/269/75287) |
+| Flutter | [pub: tencent_cloud_chat_sdk](https://pub.dev/packages/tencent_cloud_chat_sdk) | [Flutter SDK 集成](https://cloud.tencent.com/document/product/269/96058) |
+| React Native | [npm: @tencentcloud/chat](https://www.npmjs.com/package/@tencentcloud/chat) | [React Native SDK 集成](https://cloud.tencent.com/document/product/269/77536) |
+| Web (JS) | [npm: @tencentcloud/chat](https://www.npmjs.com/package/@tencentcloud/chat) | [JavaScript SDK 集成](https://cloud.tencent.com/document/product/269/75286) |
+
+## 场景方案
+
+基于 Tencent Chat SDK 构建行业解决方案：
+
+- 💬 [Official Channel](https://trtc.io/document/69925) — 类 WhatsApp Channel 的品牌广播与订阅能力
+- 🎮 [Discord 式社区](https://trtc.io/document/53499) — 服务器、频道、话题子区、表情回应，构建大型社群
+- 🤖 [AI 聊天机器人](https://trtc.io/document/54925) — 结合大语言模型，构建智能客服、情感陪伴等 AI 对话场景
+- 🧧 [红包](https://trtc.io/document/78288) — 基于自定义消息与支付系统集成，在单聊和群聊中发送红包
+
+## 快速链接
+
+- 🤖 [AI 能力接入](https://trtc.io/document/72277) — 为聊天体验集成 AI 能力
+- 🎮 [在线 Demo](https://trtc.io/demo/homepage/#/detail?scene=messenger) — 在浏览器中体验 Tencent Chat SDK
+- 📡 [REST API 文档](https://trtc.io/document/34620?product=chat&menulabel=restfulapi) — 用户管理、消息收发等服务端 API
+- 🏠 [产品主页](https://trtc.io/products/chat) — 功能概览、定价及企业版特性
+- 🖥️ [控制台](https://console.trtc.io) — 管理应用及监控用量
+- 🔄 [Chat SDK V2 API 升级指南](https://docs.qq.com/sheet/DS3lMdHpoRmpWSEFW)
+
+## 联系我们
+
+- **Stack Overflow**：使用标签 [`trtc.io`](https://stackoverflow.com/questions/tagged/trtc.io) 提问
+- **Telegram**：[加入开发者社区](https://t.me/+EPk6TMZEZMM5OGY1)
+- **WhatsApp**：[联系我们的团队](https://chat.whatsapp.com/Gfbxk7rQBqc8Rz4pzzP27A)
+- **GitHub Issues**：[提交 Bug 或功能建议](https://github.com/TencentCloud/TIMSDK/issues)
