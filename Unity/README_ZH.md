@@ -1,30 +1,13 @@
-[English](./README.md)|简体中文
+[English](./README.md) | 简体中文
 
-#### 1. 腾讯云即时通信 IM Unity SDK源码
+# Tencent Chat SDK — Unity
 
-##### 腾讯云即时通信IM Unity SDK源码
+> ⚠️ **此目录已停止维护。**
+>
+> 请使用以下独立仓库和集成文档。
 
-[Chat-demo-unity](https://github.com/TencentCloud/chat-demo-unity)
+## 快速开始
 
-
-##### 无UI SDK GitHub地址
-
-[Chat-sdk-unity](https://github.com/TencentCloud/chat-sdk-unity/tree/unity)
-
-
-##### 其他
-
-①. [unity sdk集成文档](https://cloud.tencent.com/document/product/269/54106)
-
-②. [unity api example使用文档](https://cloud.tencent.com/document/product/269/75289)
-
-#### 2. TIMPush
-
-[Push 服务](https://cloud.tencent.com/document/product/269/100621)
-
-[Push demo](https://github.com/TencentCloud/TIMSDK/tree/master/Unity/Push/pushdemo)
-
-
-
-##### 联系我们
-[zhiliao](https://zhiliao.qq.com/)
+| 类型 | GitHub | 集成文档 |
+|---|---|---|
+| **Unity Core SDK** | [chat-sdk-unity](https://github.com/TencentCloud/chat-sdk-unity) | [Unity SDK 集成](https://cloud.tencent.com/document/product/269/75289) |
